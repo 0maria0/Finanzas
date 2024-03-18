@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador Financeiro</h1>
+        </header>
+        <section class="balance">
+            <h2>Saldo Atual: <span id="current-balance">0</span></h2>
+            <button id="reset-balance">Resetar Saldo</button>
+        </section>
+        <section class="transactions">
+            <form id="transaction-form">
+                <h2>Adicionar Transação</h2>
+                <input type="number" id="amount" placeholder="Valor" required>
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="date" id="date" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <form id="balance-init-form">
+                <h2>Definir Saldo Inicial</h2>
+                <input type="number" id="initial-amount" placeholder="Saldo Inicial" required>
+                <input type="date" id="initial-date" required>
+                <button type="submit">Definir</button>
+            </form>
+        </section>
+        <section class="filter">
+            <h2>Filtrar Transações</h2>
+            <input type="date" id="start-date">
+            <input type="date" id="end-date">
+            <button id="filter-transactions">Filtrar</button>
+        </section>
+        <section class="transaction-list">
+            <h2>Últimas Transações</h2>
+            <ul id="transactions-list"></ul>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

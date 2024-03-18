@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #111;
+    color: #0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
+
+section {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0f0;
+    border: 1px solid #0f0;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #0f0;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0f0;
+    background-color: #333;
+    color: #0f0;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #5f5;
+}
+
+button {
+    background-color: #0f0;
+    color: #111;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: none;
+}
+
+button:hover {
+    background-color: #111;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
+
+.transaction-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-list li {
+    padding: 10px;
+    border-bottom: 1px solid #0f0;
+    text-shadow: 0 0 5px #0f0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
